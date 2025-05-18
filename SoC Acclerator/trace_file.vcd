@@ -1,0 +1,58 @@
+$date
+     Feb 04, 2025       13:02:59
+$end
+
+$version
+              SystemC 2.3.0-ASI --- Sep 10 2012 16:44:06
+$end
+
+$timescale
+     1 ns
+$end
+
+$scope module SystemC $end
+$var wire    8  aaa  MSB_output_cpa [7:0]  $end
+$var wire   16  aab  Product [15:0]  $end
+$var wire    8  aac  Sum_CSA_output [7:0]  $end
+$var wire    8  aad  Carry_CSA_output [7:0]  $end
+$var wire    8  aae  B_input_whole_module [7:0]  $end
+$var wire    8  aaf  A_input_whole_module [7:0]  $end
+$var wire    8  aag  LSB_output_cpa [7:0]  $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+b0 aaa
+b110 aab
+b0 aac
+b0 aad
+b10 aae
+b11 aaf
+b110 aag
+$end
+
+#20
+b0 aab
+b101100 aae
+b0 aaf
+b0 aag
+
+#40
+b1010001 aab
+b1001 aae
+b1001 aaf
+b1010001 aag
+
+#60
+b11111110 aaa
+b1111111000000001 aab
+b11111110 aac
+b1111111 aad
+b11111111 aae
+b11111111 aaf
+b1 aag
+
